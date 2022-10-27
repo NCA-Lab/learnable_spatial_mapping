@@ -1,5 +1,5 @@
 clear;clc;close all;
-rng(114514)
+rng(123)
 savepath = 'D:\EEG_dataset\dataset_KUL\kul_cv';
 datasetpath = 'D:\EEG_dataset\dataset_KUL\preprocessed_data_128Hz';
 
