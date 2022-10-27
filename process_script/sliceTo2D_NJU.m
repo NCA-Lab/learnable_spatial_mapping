@@ -1,6 +1,6 @@
 clear;clc;close all;
-rng(114514)
-window_length = [2,5];
+rng(123)
+window_length = [1,2,5,10];
 for lenwin = window_length
 	for way = ["twoway","threeway","fourway","eightway"]
 		fprintf("Starting preprocess for %s\n",way);
