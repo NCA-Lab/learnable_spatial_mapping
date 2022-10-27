@@ -157,7 +157,7 @@ def run_dist(rank, world_size, tb_filename="./runs/"):
     winlen = 2
     cvAccu = torch.zeros((5, 11))
     for l in range(1, 2):
-        l2factor = 1e-4
+        l2factor = 1e-5
         for cv in range(1, 6):
             print(f"Cross validation on l2factor {l2factor} fold {cv}")
 
