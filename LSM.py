@@ -478,7 +478,7 @@ if __name__ == "__main__":
     now = datetime.now().strftime("%y-%m-%d-%H:%M:%S")
     filename = "./runs/%s/" % now
     os.mkdir(filename)
-    shutil.copy("./convMap+attention.py", filename + "convMap+attention.py")
+    shutil.copy("./LSM.py", filename + "LSM.py")
     mp.spawn(
         run_dist,
         args=(torch.cuda.device_count(), filename),
